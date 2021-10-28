@@ -1,8 +1,9 @@
 'use strict';
-// Use Strict Mode for limit error
+// use of strict mode to limit errors
 
 // GET THE DATA FISH (PHOTOGRAPHERS & MEDIAS)
 export default class ApiFishEye {
+    
     async getDataFishEye() {
         let url = 'Api/photographers.json';
         let response = await fetch(url);
