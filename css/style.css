@@ -13,21 +13,30 @@ html {
     font-family: 'DM Sans', sans-serif;
 }
 
-nav ul li:hover,
-li.actived {
-    background-color: #901C1C;
-    color: #fff;
+ul li {
+    margin-bottom: 0.3125rem;
 }
 
-ul li {
+ul li a{
     border: .5px solid #C4C4C4;
     border-radius: 11px;
-    color: #901C1C;
     font-size: 14px;
     font-weight: 500;
     list-style: none;
     margin: 0.125rem 0.1875rem;
     padding: .0625rem .375rem;
+}
+
+li a {
+    color: #901C1C;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
     transition: all .2s;
 }
+
+li a:hover {
+    background-color: #901C1C;
+    color: #fff;
+}
+
