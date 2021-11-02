@@ -8,6 +8,11 @@ import ApiFishEye from './SearchApi/ApiFishEye.js';
 //IMPORT  HOMEPAGE
 import HomePageBuilder from './Home/HomePageBuilder.js';
 
+//IMPORT  DROPDOWN  MENU
+
+//IMPORT  MEDIA BUILDERS
+
+
 (function appDispatch() {
 
     new ApiFishEye().getDataFishEye().then((data) => {
@@ -16,7 +21,13 @@ import HomePageBuilder from './Home/HomePageBuilder.js';
             // PHOTOGRAPHER PROFIL HEADER
             new PhotographerProfil().displayPhotographerProfil(data);
 
+            //DROPDOWN MENU
+            
+
+            //PHOTOGRAPHERS (GALLERY & LIKES BOX) MEDIA BUILDER
+            
         }
+
         // HOMEPAGE (PHOTOGRAPHERS, SCROLL, FILTER)
         new HomePageBuilder().displayPhotographers(data);
 

@@ -6,6 +6,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--========= Link Favicon =======-->
+    <link rel="shortcut icon" href="medias/favicon/Favicon.png" type="image/png">
     <!--========= Link Css ===========-->
     <link rel="stylesheet" href="./css/style.css" />
     <!--==== Link Photographe ========-->
@@ -29,15 +31,17 @@
     <main>
         <!-- HEADER MAIN -->
         <header id="ph-profil" aria-label="photographer information">
-            <section id="ph-profil-header"></section>
+            <label id="ph-profil-header"></label>
         </header>
 
         <!-- DROPDOWN -->
         <div class="works-sort">
             <span id="sort-text">Trier par</span>
+
             <div id="sort-wrapper">
                 <button class="sort-btn" aria-haspopup="listbox">Popularité</button>
                 <span class="fas fa-chevron-down arrow-down-open" role="button"></span>
+
                 <ul class="hidden-sort" role="listbox">
                     <li class="sort" role="option">
                         Popularité <span class="fas fa-chevron-up arrow-up-close"></span>
@@ -46,13 +50,14 @@
                     <li class="sort" role="option">Titre</li>
                 </ul>
             </div>
+        
         </div>
 
         <!-- WORK -->
         <section id="ph-works" aria-label="photographer works"></section>
 
         <!-- BOX -->
-        <div id="box" aria-label="photographer likes and price"></div>
+        <div id="box"></div>
 
         <!--MODAL-->
         <div role="dialog" id="form-dialog" aria-label="contact me form" aria-labelledby="form-title"
@@ -106,7 +111,8 @@
 
         <!--LIGHTBOX-->
         <aside id="works-lightbox" aria-hidden="true">
-            <article id="lightbox-body" role="dialog">
+            <article id="lightbox-body">
+                <h2>lightbox</h2>
                 <span class="fas fa-times close-lightbox-icon" role="button" title="Close dialog"></span>
                 <span class="fas fa-chevron-left left-arrow-lightbox" role="button" title="Previous image"></span>
                 <span class="fas fa-chevron-right right-arrow-lightbox" role="button" title="Next image"></span>

@@ -3,6 +3,10 @@
     display: none;
 }
 
+ul li {
+    border-radius: 0;
+}
+
 @media (min-width: 900px) {
     .arrow-down-open {
         color: #fff;
@@ -76,5 +80,15 @@
         align-items: center;
         display: flex;
         justify-content: space-between;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    ul.hidden-sort li:nth-child(3) {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 }
