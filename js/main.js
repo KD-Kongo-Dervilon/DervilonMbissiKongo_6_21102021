@@ -8,7 +8,9 @@ import ApiFishEye from './SearchApi/ApiFishEye.js';
 //IMPORT  HOMEPAGE
 import HomePageBuilder from './Home/HomePageBuilder.js';
 
-//IMPORT  DROPDOWN  MENU
+//IMPORT PHOTOGRAPHERS PROFIL
+import PhotographerProfil from './photographers/PhotographerProfils.js';
+
 
 //IMPORT  MEDIA BUILDERS
 
