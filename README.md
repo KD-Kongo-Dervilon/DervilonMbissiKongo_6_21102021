@@ -5,7 +5,7 @@ Projet 6: Créez un site accessible pour une plateforme de photographes
 Lien de la Demo :
 https://kd-kongo-dervilon.github.io/DervilonMbissiKongo_6_21102021/
 
-/*====================================================================*/
+/*============================================*/
 Objectif
 
     Rendre responsive et accessible le site
@@ -19,7 +19,7 @@ Objectif
     Gérer les évènements d'un site avec JavaScript
 
 
-/*====================================================================*/
+/*===============================================*/
 Fabriqué avec
 
     Github-Desktop - logiciel de versioning et de stockage.
@@ -28,7 +28,7 @@ Fabriqué avec
 
 
 
-/*====================================================================*/
+/*================================================*/
 Map du Javascript 
 
 Schéma du Javascript :
@@ -36,7 +36,7 @@ Schéma du Javascript :
 Shéma du Html :
 
 
-/*====================================================================*/
+/*================================================*/
 Structure en Javascript :
 
 Dossiers SearchApi
@@ -54,7 +54,7 @@ Récupere  les import de MediaFactory  /  Lightbox
 GalleryFactory : crée la section gallerie pour chaque page des photographes.
 HomePage
 
-/*====================================================================*/
+/*===============================================*/
 Dossier Home
 
 HomePageBuilder : crée la section comprenant l’ensemble des photographes sur la page d’accueil à partir des données JSON récupérées dans la classe ApiFishEye. Elle appelle également, les classes ‘Filter’ et ‘Scroll’.
@@ -63,7 +63,7 @@ Filter : filtrer les photographes par tags dans la page d’accueil.
 
 Scroll : faire apparaitre le bouton ‘Passer au contenu’ dans la page d’accueil lorsque l’utilisateur se trouve à un certain point de la page. Permet, de plus, de rediriger celui-ci au clic du bouton, vers la section des photographes.
 
-/*====================================================================*/
+/*================================================*/
 Photographers Pages
 
 PhotographerProfil : créé le profil, se trouvant dans le header, de chaque photographe sur la page qui lui est destinée, à partir des données JSON récupérées dans la classe ApiFishEye. De plus, appelle les classes ‘Modal’ et ‘Form’.
@@ -80,9 +80,10 @@ Lightbox : permet de créer, au clic d’une image/video, une Lightbox. Cette Li
 
 LikeSubscriber : permet d’ajouter/enlever un ‘like’ au clic de l'icône ‘coeur’ pour chaque media. À noter qu’à chaque clic, le nombre de ‘like’ du média ainsi que le nombre total de ‘like’ du photographes en question sont incrémentés.
 
-/*====================================================================*/
+/*=========================================*/
 Auteur :
     M'BISSI KONGO DERVILON
+    
 Projet :
      Projet6: Créez un site accessible pour une plateforme de photographes
 
