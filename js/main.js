@@ -11,8 +11,12 @@ import HomePageBuilder from './Home/HomePageBuilder.js';
 //IMPORT PHOTOGRAPHERS PROFIL
 import PhotographerProfil from './photographers/PhotographerProfils.js';
 
+//IMPORT DROPDOWN MENU
+import DropDownMenu from './photographers/DropDownSort.js';
 
 //IMPORT  MEDIA BUILDERS
+import MediaBuilder from './photographers/MediaBuilders.js';
+
 
 
 (function appDispatch() {
@@ -24,9 +28,11 @@ import PhotographerProfil from './photographers/PhotographerProfils.js';
             new PhotographerProfil().displayPhotographerProfil(data);
 
             //DROPDOWN MENU
+            new DropDownMenu().dropDown(data);
             
-
             //PHOTOGRAPHERS (GALLERY & LIKES BOX) MEDIA BUILDER
+            new MediaBuilder().photographersMedias(data);
+            return
             
         }
 

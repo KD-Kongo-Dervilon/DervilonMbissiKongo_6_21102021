@@ -15,6 +15,7 @@ export default class HomePageBuilder {
         photographers.map(photographe => {
             let sectionPhotographers = document.getElementById('photographers');
             let articlePhotographers = document.createElement('article');
+            
             articlePhotographers.className = photographe.tags.join(' ') + ' articlePh';
 
             let templatePhotographer = `

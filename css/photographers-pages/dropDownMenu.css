@@ -71,6 +71,10 @@ ul li {
         z-index: 10;
     }
 
+    ul.hidden-sort li {
+        margin: 0;
+    }
+
     ul.hidden-sort li:hover {
         background-color: #651414;
         cursor: pointer;

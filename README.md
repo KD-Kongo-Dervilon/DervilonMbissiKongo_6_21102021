@@ -1,67 +1,92 @@
 # DervilonMbissiKongo_6_21102021
 
-Projet6: Créez un site accessible pour une plateforme de photographes
-
-Objectif:
-        >  Site web de photographes freelances.
-        >  Modifiéz un site statique à un site dynamique
-        > Le rendre responsive et accessible au personnes malvoyantes et autres
-        
-        
-Structure de ma map en Javascript :
-
-Structure de ma map en Html :
+Projet 6: Créez un site accessible pour une plateforme de photographes
 
 Lien de la Demo :
 https://kd-kongo-dervilon.github.io/DervilonMbissiKongo_6_21102021/
 
-Prototype des fonctionnalités :
-                              . Page d'accueil  
-                              
-                              > Liste de tous les photographes avec leur nom, leur slogan, leur localisation
-                                            leur prix/heure, leurs tags et une image miniature de leur choix.
-                                            
-                              > En cliquant sur une étiquette (tag) dans la barre de navigation, la liste des
-                                  photographes est filtrée pour n'afficher que ceux qui correspondent à cette étiquette.
-                                  
-                             > Lorsque l'utilisateur clique sur la vignette d'un photographe, il est amené à sa page.
-                             
-                             
-                             .Pages des photographes
-                             
-                             > Affiche une galerie des travaux du photographe.
-                             
-                             > Les photographes peuvent montrer à la fois des photos et des vidéos.
-                                  . Dans le cas des vidéos, montrer une image miniature dans la galerie.
-                                                  Chaque média comprend un titre et un nombre de likes.
-                                  . Lorsque l'utilisateur clique sur l'icône "Like", le nombre de likes affiché est incrémenté.
-                                  . Le nombre de likes total d’un photographe doit correspondre à la 
-                                                            somme des likes de chacun de ses médias.
-                                                            
-                            > Les médias peuvent être triés par popularité ou par titre.
-                            
-                            > Lorsque l'utilisateur clique sur un média, celui-ci doit s’ouvrir dans une lightbox 
-                                  . Lorsque la lightbox est affichée, il y a une croix dans le coin pour fermer la fenêtre
-                                  . Des boutons de navigation permettent de passer d'un élément média à l'autre 
-                                  (les utilisateurspeuvent cliquer sur ces boutons pour naviguer).
-                                  . Les touches fléchées permettent également de naviguer entre les médias.
-                                  
-                          >  Afficher un bouton pour contacter le photographe.
-                                  . Le formulaire de contact est une modale qui s'affiche par-dessus le reste.
-                                  . Il comprend des champs pour les noms, l'adresse électronique et le message.
-                                  . Plus tard, le bouton de contact enverra un message au photographe.
-                                          Pour l'instant, seulement afficher le contenu des trois champs dans les logs de la console
-                                         
-  Exigences design supplémentaires : 
-                                   > Rendre le système mobile convivial et responsive
-                                   > Le site doit être accessibilité est clé
-                                        ●  Utilisez des éléments HTML "sémantiques" qui décrivent leur intention autant que
-                                                          possible, au lieu de mettre des éléments <div> et <span> partout.
-                                        ●  Lorsque vous devez créer un élément personnalisé, ajoutez des attributs ARIA pour
-                                                          décrire ce qu'il fait.
-                                        ●  Le code devrait passer les tests AChecker sans “known issue” (afin qu'il soit
-                                                  conforme aux WCAG).
-                                        ●  Toute la gestion des événements (par exemple, les clics et les pressions au clavier)
-                                                    doit être configurée (utilisez KeyboardEvent.key ou KeyboardEvent.code.).
-                                        ●  Utilisez un lecteur d'écran gratuit pour vous faire une idée de ce que représente
-                                                    l'utilisation du site pour une personne malvoyante
+/*====================================================================*/
+                                Objectif
+
+    Rendre responsive et accessible le site
+
+    Ecrire du code JavaScript maintenable
+
+    Modifié un site statique en un site dynamique 
+
+    Assurer l'accessibilité d'un site web
+
+    Gérer les évènements d'un site avec JavaScript
+
+
+/*====================================================================*/
+                                Fabriqué avec
+
+    Github-Desktop - logiciel de versioning et de stockage.
+
+    Visual Studio Code - Editeur de code.
+
+
+
+/*====================================================================*/
+                                Map du Javascript 
+
+Schéma du Javascript :
+
+Shéma du Html :
+
+
+/*====================================================================*/
+                                Structure en Javascript :
+
+Dossiers SearchApi
+ApiFishEye : récupére, de manière asynchrone, les données du JSON.
+
+Dossier Factory
+ImageFactory : crée un élément img, et lui donne les attributs (‘src’, ‘alt’, ‘role’).
+
+VideoFactory : crée un élément video, et lui donne les attributs (‘src’, ‘controls’, ‘role’).
+
+Récupere les imports de ImageFactory et VideoFactory
+MediaFactory : vérifie si l’élément est une image ou une vidéo et exécute ImageFactory ou VideoFactory.
+
+Récupere  les import de MediaFactory  /  Lightbox
+GalleryFactory : crée la section gallerie pour chaque page des photographes.
+HomePage
+
+/*====================================================================*/
+                                Dossier Home
+
+HomePageBuilder : crée la section comprenant l’ensemble des photographes sur la page d’accueil à partir des données JSON récupérées dans la classe ApiFishEye. Elle appelle également, les classes ‘Filter’ et ‘Scroll’.
+
+Filter : filtrer les photographes par tags dans la page d’accueil.
+
+Scroll : faire apparaitre le bouton ‘Passer au contenu’ dans la page d’accueil lorsque l’utilisateur se trouve à un certain point de la page. Permet, de plus, de rediriger celui-ci au clic du bouton, vers la section des photographes.
+
+/*====================================================================*/
+                                Photographers Pages
+
+PhotographerProfil : créé le profil, se trouvant dans le header, de chaque photographe sur la page qui lui est destinée, à partir des données JSON récupérées dans la classe ApiFishEye. De plus, appelle les classes ‘Modal’ et ‘Form’.
+
+Modal : faire apparaitre un formulaire au clic du bouton ‘Contactez-moi’, afin de pouvoir communiquer avec le photographe de son choix.
+
+Form : vérifier les informations que l’utilisateur rentre dans le formulaire.
+
+DropDownMenu : permet à l’utilisateur d’ouvrir/fermer le menu dropDown qui le donnera la possibilité de trier le travail de chaque photographe par Popularité, par Date ou bien par Titre. Appelle GalleryFactory à chaque fois que l’utilisateur fait un choix de trie afin de créer le HTML de la galerie.
+
+MediaBuilder : appelle GalleryFactory afin de créer par default l’HTML de la galerie. De plus, crée la box qui comprend le nombre total de ‘Likes’ ainsi que le prix du photographe.
+
+Lightbox : permet de créer, au clic d’une image/video, une Lightbox. Cette Lightbox affiche les médias dans une taille plus conséquente, et permet de switcher d’une image/video à une autre à l’aide des buttons ‘arrow’ ou bien avec les flèches directionnelles du clavier.
+
+LikeSubscriber : permet d’ajouter/enlever un ‘like’ au clic de l'icône ‘coeur’ pour chaque media. À noter qu’à chaque clic, le nombre de ‘like’ du média ainsi que le nombre total de ‘like’ du photographes en question sont incrémentés.
+
+/*====================================================================*/
+                                Auteur 
+Auteur
+    M'BISSI KONGO DERVILON
+
+Projet 
+     Projet6: Créez un site accessible pour une plateforme de photographes
+
+
+

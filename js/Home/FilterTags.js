@@ -15,7 +15,7 @@ export default class Filter {
             let classValue = e.target.classList.value;
 
             // returns the first index for which a given element is found in an array
-            if (-1 === classValue.indexOf('actived')) {
+            if (classValue.indexOf('actived') === -1) {
                 e.target.classList.add('actived')
             } else {
                 e.target.classList.remove('actived')

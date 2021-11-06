@@ -33,7 +33,9 @@
 }
 
 .ph-profil button:hover {
-    background: #651414;
+    background: #D3573C;
+    color: #000;
+    font-weight: bold;
     transform: scale(1.05);
 }
 
@@ -42,6 +44,7 @@
     height: 100px;
     object-fit: cover;
     width: 100px;
+    box-shadow: 0px 2px 5px #000;
 }
 
 .ph-tagline {
@@ -79,12 +82,12 @@
 @media (min-width: 1200px) {
     .ph-profil {
         background-color: #FAFAFA;
-        margin: 0 20px;
+        margin: 0rem;
     }
 
     .ph-profil button {
         height: 55px;
-        left: 42rem;
+        left: 34rem;
         position: absolute;
         top: 9.8rem;
     }
@@ -105,7 +108,10 @@
     .ph-profil {
         background: #fafafa;
         padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0px 2px 5px #fff;
     }
+
 
     .ph-profil img {
         height: 200px;
