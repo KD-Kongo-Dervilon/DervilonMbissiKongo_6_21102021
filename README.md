@@ -18,16 +18,20 @@ Objectif
 
     Gérer les évènements d'un site avec JavaScript
 
+/*===============================================*/
+Les outils utiliser
 
+    Webpagetest - vérifie la performance de chacune de vos pages
+
+    w3c Link checker - vérifie la validité des liens sur vos pages et relève ceux qui sont brisés
+
+    wave  -  Évaluation de l'accessibilité du site Web. 
 /*===============================================*/
 Fabriqué avec
 
     Github-Desktop - logiciel de versioning et de stockage.
 
     Visual Studio Code - Editeur de code.
-
-
-
 /*================================================*/
 Map du Javascript 
 

@@ -1,0 +1,24 @@
+{
+  "name": "dervilonmbissikongo_6_21102021",
+  "version": "1.0.0",
+  "description": "Projet 6: Créez un site accessible pour une plateforme de photographes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KD-Kongo-Dervilon/DervilonMbissiKongo_6_21102021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KD-Kongo-Dervilon/DervilonMbissiKongo_6_21102021/issues"
+  },
+  "homepage": "https://github.com/KD-Kongo-Dervilon/DervilonMbissiKongo_6_21102021#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2"
+  }
+}
